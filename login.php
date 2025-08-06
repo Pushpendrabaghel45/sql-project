@@ -28,9 +28,13 @@ if (isset($_POST['login'])) {
 
 
             if ($username == $username && $password == $password) {
+                
                 $_SESSION['name'] = $name;
+                
                 $_SESSION['username'] = $username;
+                
                 $_SESSION['password'] = $password;
+                
                 header('location:welcome.php');
             }
         } else {
@@ -40,3 +44,4 @@ if (isset($_POST['login'])) {
     }
 
 }
+
