@@ -8,6 +8,7 @@ $message =$_POST['message'];
 
 // Database connection
 
+
 $conn = new mysqli('localhost','root','','pp');
 	if($conn->connect_error){
 		echo "$conn->connect_error";
@@ -24,4 +25,5 @@ $conn = new mysqli('localhost','root','','pp');
  $stmt->close();
  $conn->close();
 }
+
  ?>
